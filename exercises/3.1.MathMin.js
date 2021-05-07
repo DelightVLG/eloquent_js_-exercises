@@ -3,8 +3,8 @@
  * Теперь мы можем написать такую функцию сами. Напишите функцию min, принимающую два аргумента,
  * и возвращающую минимальный из них.
  * @constructor
- * @param {number} firstNum - количество строк (высота треугольника)
- * @param {number} secondNum - количество строк (высота треугольника)
+ * @param {number} firstNum - первое число
+ * @param {number} secondNum - второе число
  */
 
 const minOfTwo = (firstNum, secondNum) => firstNum < secondNum ? firstNum : secondNum;
