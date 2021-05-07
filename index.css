@@ -1,0 +1,29 @@
+.main-container {
+  background-color: #000;
+}
+
+.main-title {
+  color: white;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+
+.todo__input {
+  margin-top: 15px;
+  width: 200px;
+}
+
+.todo__list-item {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.todo__btn {
+  margin-top: 10px;
+  width: 100px;
+}
