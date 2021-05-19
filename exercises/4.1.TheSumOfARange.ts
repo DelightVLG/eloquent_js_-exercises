@@ -5,17 +5,16 @@
  * построения массива. Если он не задан, шаг равен единице. Вызов функции range(1, 10, 2) должен будет
  * вернуть [1, 3, 5, 7, 9]. Убедитесь, что она работает с отрицательным шагом так,
  * что вызов range(5, 2, -1) возвращает [5, 4, 3, 2].
- * @constructor
- * @param {number} start - начало диапазона.
- * @param {number} end - конец диапазона.
- * @param {number} step - шаг для построения массива.
  */
 
-const range = (start, end, step = start < end ? 1 : -1 ) => {
-  let array = [];
-  if (step > 0) for (let i = start; i <= end; i+=step) array.push(i);
-  for (let i = start; i >= end; i+=step) array.push(i);
-  return array;
+const range = (start: number, end: number, step: number = start < end ? 1 : -1 ) => {
+    let array: Array<number> = [];
+    if (step > 0)
+        for (let i = start; i <= end; i+=step)
+            array.push(i);
+    for (let i = start; i >= end; i+=step)
+        array.push(i);
+    return array;
 }
 
 console.log(range(10,1));
@@ -24,15 +23,13 @@ console.log(range(10,1));
  * Затем напишите функцию sum, принимающую массив чисел и возвращающую их сумму. Запустите указанную выше инструкцию
  * и убедитесь, что она возвращает 55.
  *
- * @constructor
- * @param {array} arr - входной массив.
  */
 
-const sum = (arr) => {
-  let result = 0;
-  for (let item of arr) result += item;
-  return result;
+const sum = (arr: Array<number>) => {
+    let result: number = 0;
+    for (let item of arr)
+        result += item;
+    return result;
 }
 
 console.log(sum(range(10, 1)));
-
