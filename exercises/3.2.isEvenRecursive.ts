@@ -7,17 +7,16 @@
  * Напишите рекурсивную функцию isEven согласно этим правилам. Она должна принимать число и возвращать
  * булевское значение. Потестируйте её на 50 и 75. Попробуйте задать ей -1. Почему она ведёт себя таким образом?
  * Можно ли её как-то исправить?
- * @constructor
- * @recursive
- * @param {number} num - число которое надо проверить
  */
 
-const isEven = (num) => {
-  if (num === 0) return true;
-  if (num === 1) return false;
-  if (num < 0) return isEven(-num);
-
-  return isEven(num - 2);
+const isEven = (num: number): number | boolean => {
+    if (num === 0)
+        return true;
+    if (num === 1)
+        return false;
+    if (num < 0)
+        return isEven(-num);
+    return isEven(num - 2);
 }
 
 console.log(isEven(-50));

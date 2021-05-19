@@ -104,3 +104,7 @@ dist
 .tern-port
 
 .idea
+
+# folder for complied TS files
+/tsconfig.json
+/build/
