@@ -7,7 +7,7 @@
  * что вызов range(5, 2, -1) возвращает [5, 4, 3, 2].
  */
 
-const range = (start: number, end: number, step: number = start < end ? 1 : -1 ) => {
+const range = (start: number, end: number, step: number = start < end ? 1 : -1 ): number[] => {
     let array: Array<number> = [];
     if (step > 0)
         for (let i = start; i <= end; i+=step)

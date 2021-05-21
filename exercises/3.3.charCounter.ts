@@ -6,7 +6,7 @@
  * Для этого переделайте функцию countBs ...
  */
 
-const countChar = (str: string, char: string) => {
+const countChar = (str: string, char: string): number => {
     let counter: number = 0;
     for (let i = 0; i < str.length; i++) {
         if (str[i] === char)
@@ -15,7 +15,7 @@ const countChar = (str: string, char: string) => {
     return counter;
 }
 
-const countBs = (str: string) => {
+const countBs = (str: string): number => {
     return countChar(str, 'B') // замыкание
 }
 
