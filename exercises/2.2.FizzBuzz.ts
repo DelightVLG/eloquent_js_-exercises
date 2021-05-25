@@ -4,7 +4,7 @@
  * Когда сумеете, исправьте её так, чтобы она выводила "FizzBuzz" для всех чисел, которые делятся и на 3, и на 5.
  */
 
-const fizzBuzz = (start: number, end: number) => {
+const fizzBuzz = (start: number, end: number): void => {
     for (let i = start; i <= end; i++) {
         if (i % 3 === 0 && i % 5 === 0 ) console.log('FizzBuzz');
         else if (i % 3 === 0) console.log('Fizz')

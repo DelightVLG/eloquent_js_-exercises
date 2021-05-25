@@ -4,7 +4,7 @@
  * Когда справитесь, сделайте размер доски переменным, чтобы можно было создавать доски любого размера.
  */
 
-const makeAChessBoard = (size: number) => {
+const makeAChessBoard = (size: number): void => {
     let board: string = '';
     for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x++) {
