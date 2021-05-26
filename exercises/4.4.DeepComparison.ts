@@ -1,4 +1,11 @@
-const deepEqual = (a: any, b: any): boolean => {
+/** Напишите функцию deepEqual, которая принимает два значения и возвращает true, только если это два
+ * одинаковых значения или это объекты, свойства которых имеют одинаковые значения, если их сравнивать
+ * рекурсивным вызовом deepEqual.
+ */
+
+
+
+    const deepEqual = (a: any, b: any): boolean => {
     if (a === b) return true;
 
     if (a === null || typeof a != 'object' ||
